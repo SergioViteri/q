@@ -5,5 +5,5 @@ Unos ejemplitos para jugar con qiskit y circuitos cuánticos
 ```
 pip install qiskit
 pip install matplotlib
-pip install matplotlib
+pip install pylatexenc
 ```
