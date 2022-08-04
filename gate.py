@@ -9,14 +9,12 @@ from qiskit.visualization import plot_histogram
 # Creación del cricuito
 #
 circuit = QuantumCircuit(1, 1)
+circuit.x(0) # Puerta lógica cuántica X 
 circuit.barrier()
 circuit.barrier()
 circuit.measure(0, 0)
+circuit.draw(output = 'mpl').savefig(os.path.join(os.path.dirname(__file__), 'img', 'gate.jpg'))
 
-#
-# Guarda la imagen del esquema en el disco
-#
-circuit.draw(output = 'mpl').savefig(os.path.join(os.path.dirname(__file__), 'img', 'hello_q.jpg'))
 
 #
 # Ejecuta el circuito en el simulador y muestra los resultados
